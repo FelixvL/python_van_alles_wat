@@ -1,0 +1,15 @@
+<script>
+var vorigeletter = 'O';
+function go(letter){
+	console.log(vorigeletter);
+	console.log(letter);
+	vorigeletter = letter;
+	console.log("einde functie");
+}
+
+</script>
+
+
+<input type=button onclick="go('A')">
+<input type=button onclick="go('B')">
+
