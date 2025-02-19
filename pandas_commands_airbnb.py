@@ -2,7 +2,7 @@
 # https://insideairbnb.com/get-the-data/
 import pandas
 
-df = pandas.read_csv("listings.csv")
+df = pandas.read_csv("listings2.csv")
 
 print(df.columns)
 
@@ -49,6 +49,7 @@ def corrReviewEnPrijs():
     df_filtered = df[['review_scores_rating', 'price']].dropna()
     correlation = df_filtered['review_scores_rating'].corr(df_filtered['price'])
     print(f"Correlatie tussen beoordelingen en prijs: {correlation}")
+    print(df.corr())
 
 buurtMetMeesteLocaties()
 # hoogsteEnLaagstePrijs()
